@@ -1,0 +1,19 @@
+// 1 - HELPERS
+@import '1-helpers/mixins';
+@import '1-helpers/variables';
+
+// 2 - TOOLS
+@import '2-tools/normalize';
+
+// 3 - BASICS
+@import '3-basics/typography';
+
+// 2 - LAYOUTS
+@import '4-layouts/siteHeader';
+@import '4-layouts/navigation';
+@import '4-layouts/siteMainContent';
+@import '4-layouts/footer';
+
+@import '5-templates/home';
+
+
