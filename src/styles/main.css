@@ -349,23 +349,33 @@ h1, h2, h3 {
 }
 
 header {
+  margin-left: 25%;
+  width: 75vw;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: white;
-  height: 100vh;
-  color: black;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header .title {
+  margin-left: 50px;
+  height: 300px;
+  width: auto;
+  margin-right: 0px;
+}
+
+header .icon {
+  height: 300px;
+  width: auto;
+  position: relative;
+  left: -5%;
+  z-index: -9999;
 }
 
 .main-nav {
@@ -419,9 +429,18 @@ header {
   text-decoration: none;
 }
 
-header img {
-  position: absolute;
-  height: 100px;
-  width: auto;
+section {
+  margin-left: 25%;
+  width: 75vw;
+  height: 100vh;
+}
+
+section .section-about ul {
+  list-style: none;
+  font-family: 'Mencken Std Head Narrow';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 131px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,21 @@
 header {
-    @include flexCenter(column, $background-color);
+    margin-left: 25%;
+    width: 75vw;
     height: 100vh;
-    color: $header-color;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .title {
+        margin-left: 50px;
+        height: 300px;
+        width: auto;
+        margin-right: 0px;
+    }
+    .icon {
+        height: 300px;
+        width: auto;
+        position: relative;
+        left: -5%;
+        z-index: -9999;
+    }
 }
