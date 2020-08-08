@@ -1,0 +1,13 @@
+a {
+    font-family: 'Anisette Std';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.2s;
+    :hover,
+    :link {
+        text-decoration: underline;
+    }
+}
