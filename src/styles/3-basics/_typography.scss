@@ -1,4 +1,10 @@
 @import url("https://use.typekit.net/kbl8jda.css");
+html, body {
+    font-family: 'Mencken Std Head Narrow', serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
 
 h1, h2, h3 {
     font-family: 'Mencken Std Head Narrow';
