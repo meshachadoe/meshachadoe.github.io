@@ -444,7 +444,31 @@ section {
 
 .section-about h3 {
   font-family: 'Anisette Std';
-  font-style: bold;
+  font-size: 300%;
+  margin: 0;
+}
+
+.section-about ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section-about ul li {
+  font-family: 'Mencken Std Head Narrow';
+  font-weight: 800;
+  font-size: 500%;
+  line-height: 60%;
+}
+
+.section-about ul .list-number {
+  font-family: 'Anisette Std';
+  font-size: 50%;
+}
+
+.section-about ul .stroke {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 html {

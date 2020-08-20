@@ -6,3 +6,8 @@
     flex-direction: $direction;
     background: $background;
 }
+
+@mixin addStroke($color) {
+    color: white;
+    text-shadow: -1px -1px 0 $color, 1px -1px 0 $color, -1px 1px 0 $color, 1px 1px 0 $color;
+}
