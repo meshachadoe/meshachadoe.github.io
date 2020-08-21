@@ -344,16 +344,16 @@ template {
 
 html, body {
   font-family: 'Mencken Std Head Narrow', serif;
-  font-weight: 300;
+  font-weight: 800;
   font-size: 20px;
   text-rendering: optimizeLegibility;
 }
 
 h1, h2 {
   font-family: 'Mencken Std Head Narrow';
+  font-weight: 800;
   font-style: normal;
   font-size: 500%;
-  font-weight: 800;
 }
 
 h1 {
@@ -367,8 +367,14 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  font-size: 300%;
+  font-weight: 800;
+  line-height: 85%;
+}
+
 .stroke {
-  color: white;
+  color: #fff;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -392,7 +398,7 @@ header {
 }
 
 header h1 {
-  margin: 15px 0;
+  margin: 15px 0 0 0;
 }
 
 header h3 {
@@ -411,7 +417,7 @@ header h3 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: -40px;
+  margin-bottom: -38px;
 }
 
 .heading .title {
@@ -492,7 +498,10 @@ header h3 {
 section {
   margin-left: 28%;
   width: 72%;
-  height: 80vh;
+}
+
+.section-about {
+  height: 60vh;
 }
 
 .section-about ul {
@@ -513,6 +522,62 @@ section {
   font-size: 50%;
 }
 
+.section-projects .project-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer {
+  height: 140vh;
+  background-image: url("../img/DesktopUI.png");
+  background-size: cover;
+  background-position: center;
+}
+
+footer .footer-content {
+  margin-left: 28%;
+  width: 72%;
+}
+
+footer h2 {
+  padding-top: 40%;
+  margin-bottom: 10px;
+  color: #000;
+  color: #000;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+footer p {
+  color: #fff;
+  font-family: "Anisette Std";
+  font-weight: 300;
+  font-size: 180%;
+  margin: 0;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  font-size: 300%;
+  color: #fff;
+}
+
+footer ul li a {
+  padding-bottom: 180px;
+  font-size: 80%;
+  font-family: "Anisette Std Petite";
+  font-weight: 300;
+  text-decoration: none;
+  color: #fff;
+}
+
 html {
   overflow: hidden;
   height: 100%;
@@ -521,5 +586,6 @@ html {
 body {
   height: 100%;
   overflow: auto;
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=main.css.map */

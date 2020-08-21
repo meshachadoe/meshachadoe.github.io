@@ -1,10 +1,10 @@
 section {
     margin-left: 28%;
     width: 72%;
-    height: 80vh;
 }
 
 .section-about {
+    height: 60vh;
     ul {
         margin: 0;
         padding: 0;
@@ -19,5 +19,12 @@ section {
             font-family: 'Anisette Std';
             font-size: 50%;
         }
+    }
+}
+
+.section-projects {
+    .project-box {
+        display: flex;
+        flex-direction: row;
     }
 }

@@ -1,0 +1,38 @@
+footer {
+    height: 140vh;
+    background-image: url("../img/DesktopUI.png");
+    background-size: cover;
+    background-position: center;
+    .footer-content {
+        margin-left: 28%;
+        width: 72%;
+    }
+    h2 {
+        padding-top: 40%;
+        margin-bottom: 10px;
+        color: #000;
+        @include addStroke(#fff,#000);     
+    }
+    p {
+        color: #fff;
+        font-family: "Anisette Std";
+        font-weight: 300;
+        font-size: 180%;
+        margin: 0;
+    }
+    ul {
+        list-style: none;
+        li {
+            font-size: 300%;
+            color: #fff;
+            a {
+                padding-bottom: 180px;
+                font-size: 80%;
+                font-family: "Anisette Std Petite";
+                font-weight: 300;
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}

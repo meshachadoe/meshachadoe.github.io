@@ -7,7 +7,7 @@
     background: $background;
 }
 
-@mixin addStroke($color) {
-    color: white;
-    text-shadow: -1px -1px 0 $color, 1px -1px 0 $color, -1px 1px 0 $color, 1px 1px 0 $color;
+@mixin addStroke($outline-color,$text-color) {
+    color: $text-color;
+    text-shadow: -1px -1px 0 $outline-color, 1px -1px 0 $outline-color, -1px 1px 0 $outline-color, 1px 1px 0 $outline-color;
 }
