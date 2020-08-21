@@ -6,8 +6,24 @@ html, body {
     text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-family: 'Mencken Std Head Narrow';
     font-style: normal;
+    font-size: 500%;
     font-weight: 800;
+}
+
+h1 {
+    font-size: 700%;
+    line-height: 60%;
+}
+
+h3 {
+    font-family: 'Anisette Std';
+    font-size: 300%;
+    margin: 0;
+}
+
+.stroke {
+    @include addStroke(#000);
 }

@@ -349,16 +349,59 @@ html, body {
   text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: 'Mencken Std Head Narrow';
   font-style: normal;
+  font-size: 500%;
   font-weight: 800;
 }
 
+h1 {
+  font-size: 700%;
+  line-height: 60%;
+}
+
+h3 {
+  font-family: 'Anisette Std';
+  font-size: 300%;
+  margin: 0;
+}
+
+.stroke {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 header {
-  margin-left: 25%;
-  width: 75vw;
+  margin-left: 28%;
+  width: 72%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h1 {
+  margin: 15px 0;
+}
+
+header h3 {
+  margin-left: 200px;
+  font-size: 150%;
+  text-align: right;
+}
+
+.heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,16 +411,17 @@ header {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-bottom: -40px;
 }
 
-header .title {
+.heading .title {
   margin-left: 50px;
   height: 300px;
   width: auto;
   margin-right: 0px;
 }
 
-header .icon {
+.heading .icon {
   height: 300px;
   width: auto;
   position: relative;
@@ -434,18 +478,21 @@ header .icon {
   font-size: 35px;
   color: white;
   text-decoration: none;
+  transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s;
+}
+
+.main-nav ul li a:hover {
+  color: #b4b4b4;
 }
 
 section {
-  margin-left: 30%;
-  width: 70%;
-  height: 100vh;
-}
-
-.section-about h3 {
-  font-family: 'Anisette Std';
-  font-size: 300%;
-  margin: 0;
+  margin-left: 28%;
+  width: 72%;
+  height: 80vh;
 }
 
 .section-about ul {
@@ -464,11 +511,6 @@ section {
 .section-about ul .list-number {
   font-family: 'Anisette Std';
   font-size: 50%;
-}
-
-.section-about ul .stroke {
-  color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 html {
