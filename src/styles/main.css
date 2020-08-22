@@ -368,6 +368,7 @@ h3 {
 }
 
 h4 {
+  font-family: 'Anisette Std';
   font-size: 300%;
   font-weight: 800;
   line-height: 85%;
@@ -376,6 +377,36 @@ h4 {
 .stroke {
   color: #fff;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -438,6 +469,7 @@ header h3 {
 .main-nav {
   position: fixed;
   background-color: black;
+  border-right: 5px solid white;
   height: 100vh;
   width: 25%;
   display: -webkit-box;
@@ -484,15 +516,57 @@ header h3 {
   font-size: 35px;
   color: white;
   text-decoration: none;
-  transition: color 0.2s;
   -webkit-transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  -ms-transition: color 0.2s;
-  -o-transition: color 0.2s;
+  transition: color 0.2s;
 }
 
 .main-nav ul li a:hover {
   color: #b4b4b4;
+}
+
+nav {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.nav-fulldisplay {
+  padding: 10vh 0 0 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: white;
+}
+
+.nav-fulldisplay h2 {
+  margin: 0;
+  line-height: 60%;
+}
+
+.nav-fulldisplay ul {
+  list-style: none;
+}
+
+.nav-fulldisplay ul li {
+  font-size: 700%;
+  font-family: "Anisette Std";
+  color: #b4b4b4;
+}
+
+.nav-fulldisplay ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-fulldisplay ul :first-child {
+  margin-top: -50px;
 }
 
 section {
@@ -576,16 +650,5 @@ footer ul li a {
   font-weight: 300;
   text-decoration: none;
   color: #fff;
-}
-
-html {
-  overflow: hidden;
-  height: 100%;
-}
-
-body {
-  height: 100%;
-  overflow: auto;
-  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=main.css.map */

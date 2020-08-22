@@ -8,12 +8,13 @@
 // 3 - BASICS
 @import '3-basics/typography';
 
+@import '5-templates/home';
+@import '5-templates/projects';
+
 // 2 - LAYOUTS
 @import '4-layouts/siteHeader';
 @import '4-layouts/navigation';
+@import '4-layouts/navigation-full';
 @import '4-layouts/siteMainContent';
 @import '4-layouts/footer';
-
-@import '5-templates/home';
-
 
