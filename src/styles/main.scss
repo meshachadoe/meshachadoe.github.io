@@ -4,17 +4,20 @@
 
 // 2 - TOOLS
 @import '2-tools/normalize';
+@import '../../node_modules/include-media/dist/include-media';
 
 // 3 - BASICS
+@import '3-basics/base';
 @import '3-basics/typography';
+@import '3-basics/buttons';
 
-@import '5-templates/home';
-@import '5-templates/projects';
+// 4 - SECTIONS
+@import '4-sections/siteHeader';
+@import '4-sections/navigation';
+@import '4-sections/navigation-full';
+@import '4-sections/siteMainContent';
+@import '4-sections/footer';
 
-// 2 - LAYOUTS
-@import '4-layouts/siteHeader';
-@import '4-layouts/navigation';
-@import '4-layouts/navigation-full';
-@import '4-layouts/siteMainContent';
-@import '4-layouts/footer';
+// 5 - QUERIES
+@import '5-queries/home';
 

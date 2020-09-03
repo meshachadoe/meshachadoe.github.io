@@ -342,6 +342,21 @@ template {
   display: none;
 }
 
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
 html, body {
   font-family: 'Mencken Std Head Narrow', serif;
   font-weight: 800;
@@ -379,34 +394,22 @@ h4 {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-html {
-  overflow: hidden;
-  height: 100%;
+a {
+  font-family: 'Anisette Std';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: -webkit-text-decoration 0.2s;
+  transition: -webkit-text-decoration 0.2s;
+  transition: text-decoration 0.2s;
+  transition: text-decoration 0.2s, -webkit-text-decoration 0.2s;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 100%;
-  overflow: auto;
-  scroll-behavior: smooth;
-}
-
-html {
-  overflow: hidden;
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 100%;
-  overflow: auto;
-  scroll-behavior: smooth;
+a :hover,
+a :link {
+  text-decoration: underline;
 }
 
 header {
@@ -469,7 +472,6 @@ header h3 {
 .main-nav {
   position: fixed;
   background-color: black;
-  border-right: 5px solid white;
   height: 100vh;
   width: 25%;
   display: -webkit-box;
@@ -650,5 +652,11 @@ footer ul li a {
   font-weight: 300;
   text-decoration: none;
   color: #fff;
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  h1 {
+    font-size: 60%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
