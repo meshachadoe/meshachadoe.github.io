@@ -357,6 +357,15 @@ body {
   scroll-behavior: smooth;
 }
 
+.main-hiddennav {
+  margin-left: 28%;
+  width: 72%;
+}
+
+main {
+  margin: 0;
+}
+
 html, body {
   font-family: 'Mencken Std Head Narrow', serif;
   font-weight: 800;
@@ -365,7 +374,7 @@ html, body {
 }
 
 h1, h2 {
-  font-family: 'Mencken Std Head Narrow';
+  font-family: 'Mencken Std Head Narrow', serif;
   font-weight: 800;
   font-style: normal;
   font-size: 500%;
@@ -383,15 +392,25 @@ h3 {
 }
 
 h4 {
-  font-family: 'Anisette Std';
-  font-size: 300%;
+  font-family: 'Mencken Std Head Narrow';
+  font-size: 350%;
   font-weight: 800;
   line-height: 85%;
+}
+
+p {
+  font-family: 'Anisette Std Petite', sans-serif;
+  font-weight: 300;
+  font-size: 80%;
 }
 
 .stroke {
   color: #fff;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.white {
+  color: #fff;
 }
 
 a {
@@ -412,9 +431,52 @@ a :link {
   text-decoration: underline;
 }
 
+button {
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+  padding: 0;
+}
+
+button:active,
+button:pressed {
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+  padding: 0;
+}
+
+.project-box {
+  height: 230px;
+  min-width: 300px;
+  border: 6px solid #000;
+  border-radius: 25px;
+  -webkit-box-shadow: 10px 10px 0px #000000;
+          box-shadow: 10px 10px 0px #000000;
+  margin-right: 40px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project-box h4, .project-box p {
+  margin: 0;
+}
+
+.project-box h4 {
+  margin-bottom: 20px;
+}
+
 header {
-  margin-left: 28%;
-  width: 72%;
+  margin: 0 18%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,8 +531,39 @@ header h3 {
   z-index: -9999;
 }
 
-.main-nav {
+.home-nav {
   position: fixed;
+}
+
+.home-nav .nav-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  margin: 20px;
+  border: 6px solid #000;
+  border-radius: 20px;
+  background-color: #000;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.home-nav .nav-toggle h2 {
+  margin: 0;
+  margin-top: -20px;
+  font-size: 300%;
+  color: #fff;
+}
+
+.home-nav .nav-toggle:hover {
+  background-color: #fff;
+}
+
+.home-nav .nav-toggle:hover h2 {
+  color: #000;
+}
+
+.main-nav {
   background-color: black;
   height: 100vh;
   width: 25%;
@@ -532,6 +625,10 @@ nav {
   background-color: black;
 }
 
+.nav-hidden {
+  display: none;
+}
+
 .nav-fulldisplay {
   padding: 10vh 0 0 5vw;
   display: -webkit-box;
@@ -571,12 +668,8 @@ nav {
   margin-top: -50px;
 }
 
-section {
-  margin-left: 28%;
-  width: 72%;
-}
-
 .section-about {
+  margin: 0 18%;
   height: 60vh;
 }
 
@@ -598,7 +691,8 @@ section {
   font-size: 50%;
 }
 
-.section-projects .project-box {
+.section-projects .projects-heading {
+  margin-left: 18%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -606,6 +700,39 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-projects .circle {
+  z-index: -9999;
+  margin-left: -145px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background: #000;
+}
+
+.section-projects .horizontal-scroll {
+  overflow-x: auto;
+  height: 500px;
+  margin: 0 10%;
+}
+
+.section-projects .horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.section-projects .projects-collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
 }
 
 footer {
@@ -613,11 +740,6 @@ footer {
   background-image: url("../img/DesktopUI.png");
   background-size: cover;
   background-position: center;
-}
-
-footer .footer-content {
-  margin-left: 28%;
-  width: 72%;
 }
 
 footer h2 {

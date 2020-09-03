@@ -1,5 +1,29 @@
-.main-nav {
+.home-nav {
     position: fixed;
+    .nav-toggle {
+        display: flex;
+        padding: 10px;
+        margin: 20px;
+        border: 6px solid #000;
+        border-radius: 20px;
+        background-color: #000;
+        transition-duration: 0.2s;
+        h2 {
+            margin: 0;
+            margin-top: -20px;
+            font-size: 300%;
+            color: #fff;
+        }
+    }
+    .nav-toggle:hover {
+        background-color: #fff;
+        h2 {
+            color: #000;
+        }
+    }
+}
+
+.main-nav {
     background-color: black;
     // border-right: 5px solid white;
     height: 100vh;

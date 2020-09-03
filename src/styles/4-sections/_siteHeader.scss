@@ -1,6 +1,5 @@
 header {
-    margin-left: 28%;
-    width: 72%;
+    margin: 0 18%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -17,6 +16,7 @@ header {
         text-align: right;
     }
 }
+
 .heading {
     display: flex;
     align-items: center;

@@ -7,7 +7,7 @@ html, body {
 }
 
 h1, h2 {
-    font-family: 'Mencken Std Head Narrow';
+    font-family: 'Mencken Std Head Narrow', serif;
     font-weight: 800;
     font-style: normal;
     font-size: 500%;
@@ -25,12 +25,22 @@ h3 {
 }
 
 h4 {
-    font-family: 'Anisette Std';
-    font-size: 300%;
+    font-family: 'Mencken Std Head Narrow';
+    font-size: 350%;
     font-weight: 800;
     line-height: 85%;
 }
 
+p {
+    font-family: 'Anisette Std Petite', sans-serif;
+    font-weight: 300;
+    font-size: 80%;
+}
+
 .stroke {
     @include addStroke(#000,#fff);
+}
+
+.white {
+    color: #fff;
 }

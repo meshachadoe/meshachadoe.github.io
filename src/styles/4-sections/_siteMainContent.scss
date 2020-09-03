@@ -1,9 +1,9 @@
-section {
-    margin-left: 28%;
-    width: 72%;
-}
+// section {
+
+// }
 
 .section-about {
+    margin: 0 18%;
     height: 60vh;
     ul {
         margin: 0;
@@ -23,8 +23,31 @@ section {
 }
 
 .section-projects {
-    .project-box {
+    .projects-heading {
+        margin-left: 18%;
         display: flex;
         flex-direction: row;
+        align-items: center;
+    }
+    .circle {
+        z-index: -9999;
+        margin-left: -145px;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        background: #000;
+    }
+    .horizontal-scroll {
+        overflow-x: auto;
+        height: 500px;
+        margin: 0 10%;
+    }
+    .horizontal-scroll::-webkit-scrollbar {
+        display: none;
+    }
+    .projects-collection {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
     }
 }
