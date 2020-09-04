@@ -1,6 +1,6 @@
 html {
-    overflow: hidden;
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -8,11 +8,11 @@ body {
     padding: 0;
     box-sizing: border-box;
     height: 100%;
-    overflow: auto;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
-.main-hiddennav {
+.main-hiddennav{
     margin-left: 28%;
     width: 72%;
 }

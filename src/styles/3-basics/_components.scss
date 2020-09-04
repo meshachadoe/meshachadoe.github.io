@@ -1,6 +1,7 @@
 .project-box {
-    height: 230px;
-    min-width: 300px;
+    height: 330px;
+    width: 380px;
+    color: $primary-color;
     border: 6px solid #000;
     border-radius: 25px;
     box-shadow: 10px 10px 0px #000000;
@@ -14,5 +15,34 @@
     }
     h4 {
         margin-bottom: 20px;
+    }
+}
+
+.section-projects {
+    .project-box:first-of-type {
+        margin-left: 80px;
+    }
+    
+    .project-box:last-of-type {
+        border: none;
+        box-shadow: none;
+        width: 100px;
+        margin: 0;
+    }
+}
+
+.project-page {
+    h4 {
+        font-size: 400%;
+    }
+    p {
+        font-size: 100%;
+        line-height: 100%;
+    }
+    .row {
+        justify-content: center;
+    }
+    .project-box {
+        margin-bottom: 40px;
     }
 }

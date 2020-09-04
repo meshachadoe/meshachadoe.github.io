@@ -9,5 +9,6 @@
 
 @mixin addStroke($outline-color,$text-color) {
     color: $text-color;
-    text-shadow: -1px -1px 0 $outline-color, 1px -1px 0 $outline-color, -1px 1px 0 $outline-color, 1px 1px 0 $outline-color;
+    // text-shadow: -4px -4px 0 $outline-color, -4px -;
+    text-shadow: -3px -3px 0 $outline-color, 1px -1px 0 $outline-color, -1px 1px 0 $outline-color, 1px 1px 0 $outline-color;
 }

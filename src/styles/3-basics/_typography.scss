@@ -11,6 +11,7 @@ h1, h2 {
     font-weight: 800;
     font-style: normal;
     font-size: 500%;
+    color: $primary-color;
 }
 
 h1 {
@@ -38,7 +39,7 @@ p {
 }
 
 .stroke {
-    @include addStroke(#000,#fff);
+    @include addStroke($header-color,$background-color);
 }
 
 .white {

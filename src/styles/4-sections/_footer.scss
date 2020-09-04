@@ -1,8 +1,12 @@
-footer {
+.footer-home {
     height: 140vh;
     background-image: url("../img/DesktopUI.png");
     background-size: cover;
     background-position: center;
+    margin-top: -180px;
+    h2, p, ul {
+        padding-left: 50px;
+    }
     h2 {
         padding-top: 40%;
         margin-bottom: 10px;
@@ -29,6 +33,38 @@ footer {
                 text-decoration: none;
                 color: #fff;
             }
+        }
+    }
+}
+
+.footer-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -100px;
+    height: 15%;
+    background-color: $primary-color;
+    h4, p, ul {
+        color: $background-color;
+    }
+    h4 {
+        font-size: 160%;
+        padding-left: 10%;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        list-style: none;
+        margin-left: 36%;
+        li a {
+            font-size: 150%;
+            margin: 0 20px;
+            transition-duration: 0.4s;
+        }
+        li a:hover {
+            text-decoration: underline;
+            color: rgb(10,10,10);
         }
     }
 }
