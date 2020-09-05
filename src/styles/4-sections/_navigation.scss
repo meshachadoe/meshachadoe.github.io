@@ -26,7 +26,7 @@
         li {
             display: inline-block;
             a {
-                font-family: 'Anisette Std';
+                font-family: $text-font;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 180%;
@@ -68,7 +68,7 @@
         li a {
             margin-top: -300px;
             font-size: 700%;
-            font-family: "Anisette Std";
+            font-family: $text-font;
             text-decoration: none;
             color: white;
             line-height: 100%;

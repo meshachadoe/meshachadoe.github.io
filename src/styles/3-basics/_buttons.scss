@@ -1,5 +1,5 @@
 a {
-    font-family: 'Anisette Std';
+    font-family: $text-font;
     font-style: normal;
     font-weight: bold;
     font-size: 35px;
@@ -50,7 +50,7 @@ button {
     box-shadow: 10px 10px 0 $primary-color;
     border: 6px solid $background-color;
     h4 {
-        font-family: 'Mencken Std Head Narrow';
+        font-family: $heading-font;
         font-weight: 800;
         text-align: center;
         line-height: 70%;

@@ -12,13 +12,13 @@ section {
         padding: 0;
         list-style: none;
         li {
-            font-family: 'Mencken Std Head Narrow';
+            font-family: $heading-font;
             font-weight: 800;
             font-size: 500%;
             line-height: 60%;
         }
         .list-number {
-            font-family: 'Anisette Std';
+            font-family: $text-font;
             font-size: 50%;
         }
     }

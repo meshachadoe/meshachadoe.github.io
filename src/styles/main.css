@@ -367,14 +367,14 @@ main {
 }
 
 html, body {
-  font-family: 'Mencken Std Head Narrow', serif;
+  font-family: mencken-std-head-narrow, sans-serif;
   font-weight: 800;
   font-size: 20px;
   text-rendering: optimizeLegibility;
 }
 
 h1, h2 {
-  font-family: 'Mencken Std Head Narrow', serif;
+  font-family: mencken-std-head-narrow, sans-serif;
   font-weight: 800;
   font-style: normal;
   font-size: 500%;
@@ -387,20 +387,20 @@ h1 {
 }
 
 h3 {
-  font-family: 'Anisette Std';
+  font-family: anisette-std, sans-serif;
   font-size: 300%;
   margin: 0;
 }
 
 h4 {
-  font-family: 'Mencken Std Head Narrow';
+  font-family: mencken-std-head-narrow, sans-serif;
   font-size: 350%;
   font-weight: 800;
   line-height: 85%;
 }
 
 p {
-  font-family: 'Anisette Std Petite', sans-serif;
+  font-family: anisette-petite, sans-serif;
   font-weight: 300;
   font-size: 80%;
 }
@@ -415,7 +415,7 @@ p {
 }
 
 a {
-  font-family: 'Anisette Std';
+  font-family: anisette-std, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 35px;
@@ -475,7 +475,7 @@ button {
 }
 
 .menu-open h4 {
-  font-family: 'Mencken Std Head Narrow';
+  font-family: mencken-std-head-narrow, sans-serif;
   font-weight: 800;
   text-align: center;
   line-height: 70%;
@@ -657,7 +657,7 @@ header h3 {
 }
 
 .main-nav ul li a {
-  font-family: 'Anisette Std';
+  font-family: anisette-std, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 180%;
@@ -709,7 +709,7 @@ header h3 {
 .nav-fulldisplay ul li a {
   margin-top: -300px;
   font-size: 700%;
-  font-family: "Anisette Std";
+  font-family: anisette-std, sans-serif;
   text-decoration: none;
   color: white;
   line-height: 100%;
@@ -737,14 +737,14 @@ section {
 }
 
 .section-about ul li {
-  font-family: 'Mencken Std Head Narrow';
+  font-family: mencken-std-head-narrow, sans-serif;
   font-weight: 800;
   font-size: 500%;
   line-height: 60%;
 }
 
 .section-about ul .list-number {
-  font-family: 'Anisette Std';
+  font-family: anisette-std, sans-serif;
   font-size: 50%;
 }
 
@@ -819,7 +819,7 @@ section {
 
 .footer-home p {
   color: #fff;
-  font-family: "Anisette Std";
+  font-family: anisette-std, sans-serif;
   font-weight: 300;
   font-size: 180%;
   margin: 0;
@@ -837,7 +837,7 @@ section {
 .footer-home ul li a {
   padding-bottom: 180px;
   font-size: 80%;
-  font-family: "Anisette Std Petite";
+  font-family: anisette-petite, sans-serif;
   font-weight: 300;
   text-decoration: none;
   color: #fff;
@@ -936,11 +936,5 @@ body {
 
 html, body {
   overflow-x: hidden;
-}
-
-@media (min-width: 321px) and (max-width: 768px) {
-  h1 {
-    font-size: 60%;
-  }
 }
 /*# sourceMappingURL=main.css.map */

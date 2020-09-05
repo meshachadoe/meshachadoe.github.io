@@ -15,7 +15,7 @@
     }
     p {
         color: #fff;
-        font-family: "Anisette Std";
+        font-family: $text-font;
         font-weight: 300;
         font-size: 180%;
         margin: 0;
@@ -28,7 +28,7 @@
             a {
                 padding-bottom: 180px;
                 font-size: 80%;
-                font-family: "Anisette Std Petite";
+                font-family: $decor-font;
                 font-weight: 300;
                 text-decoration: none;
                 color: #fff;
