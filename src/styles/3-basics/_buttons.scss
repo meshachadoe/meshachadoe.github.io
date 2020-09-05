@@ -6,9 +6,9 @@ a {
     color: white;
     text-decoration: none;
     transition: text-decoration 0.2s;
-    :hover,
-    :link {
-        text-decoration: underline;
+    a:hover,
+    a:link {
+        text-decoration: none;
         color: white;
     }
 }
@@ -24,8 +24,6 @@ button:active,
 button:pressed {
     font-size: 100%;
     font-family: inherit;
-    border: 0;
-    padding: 0;
 }
 
 button {
@@ -37,32 +35,36 @@ button {
     overflow: visible;
     padding: 0;
 }
-button::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
 
-.menu-toggle {
-    font-size: 300%;
+.menu-open {
     position: fixed;
     z-index: 9999;
     top: 5vh;
     right: 10vw;
-    line-height: 70%;
-    padding-bottom: 100px;
+    padding: 10px 0 100px 0;
     height: 100px;
     width: 180px;
     border: 6px solid $primary-color;
     background-color: $primary-color;
-    color: $background-color;
     border-radius: 20px;
     box-shadow: 10px 10px 0 $primary-color;
     border: 6px solid $background-color;
+    h4 {
+        font-family: 'Mencken Std Head Narrow';
+        font-weight: 800;
+        text-align: center;
+        line-height: 70%;
+        font-size: 170%;
+        color: $background-color;
+    }
     transition-duration: 0.2s;
 }
 
-.menu-toggle:hover{
+.menu-open:hover{
     top: 6vh;
     right: 9vw;
     box-shadow: 4px 4px 0 $primary-color;
 }
+// .menu-open h4:hover {
+//     text-decoration: none;
+// }

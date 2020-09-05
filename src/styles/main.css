@@ -427,9 +427,9 @@ a {
   transition: text-decoration 0.2s, -webkit-text-decoration 0.2s;
 }
 
-a :hover,
-a :link {
-  text-decoration: underline;
+a a:hover,
+a a:link {
+  text-decoration: none;
   color: white;
 }
 
@@ -444,8 +444,6 @@ button:active,
 button:pressed {
   font-size: 100%;
   font-family: inherit;
-  border: 0;
-  padding: 0;
 }
 
 button {
@@ -458,24 +456,16 @@ button {
   padding: 0;
 }
 
-button::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-.menu-toggle {
-  font-size: 300%;
+.menu-open {
   position: fixed;
   z-index: 9999;
   top: 5vh;
   right: 10vw;
-  line-height: 70%;
-  padding-bottom: 100px;
+  padding: 10px 0 100px 0;
   height: 100px;
   width: 180px;
   border: 6px solid black;
   background-color: black;
-  color: white;
   border-radius: 20px;
   -webkit-box-shadow: 10px 10px 0 black;
           box-shadow: 10px 10px 0 black;
@@ -484,7 +474,16 @@ button::-moz-focus-inner {
           transition-duration: 0.2s;
 }
 
-.menu-toggle:hover {
+.menu-open h4 {
+  font-family: 'Mencken Std Head Narrow';
+  font-weight: 800;
+  text-align: center;
+  line-height: 70%;
+  font-size: 170%;
+  color: white;
+}
+
+.menu-open:hover {
   top: 6vh;
   right: 9vw;
   -webkit-box-shadow: 4px 4px 0 black;
@@ -641,6 +640,8 @@ header h3 {
 }
 
 .main-nav ul {
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,21 +660,16 @@ header h3 {
   font-family: 'Anisette Std';
   font-style: normal;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 180%;
   color: white;
   text-decoration: none;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
+  -webkit-transition: font-size 0.2s;
+  transition: font-size 0.2s;
 }
 
 .main-nav ul li a:hover {
-  color: #b4b4b4;
-}
-
-nav {
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
+  font-size: 240%;
+  color: #999999;
 }
 
 .nav-hidden {
@@ -681,7 +677,10 @@ nav {
 }
 
 .nav-fulldisplay {
+  height: 80vh;
+  width: 100vw;
   padding: 10vh 0 0 5vw;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -692,10 +691,13 @@ nav {
   justify-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  background-color: black;
   color: white;
+  z-index: 9998;
 }
 
-.nav-fulldisplay h2 {
+.nav-fulldisplay button {
+  color: white;
   margin: 0;
   line-height: 60%;
 }
@@ -704,19 +706,17 @@ nav {
   list-style: none;
 }
 
-.nav-fulldisplay ul li {
+.nav-fulldisplay ul li a {
+  margin-top: -300px;
   font-size: 700%;
   font-family: "Anisette Std";
-  color: #b4b4b4;
-}
-
-.nav-fulldisplay ul li a {
   text-decoration: none;
   color: white;
+  line-height: 100%;
 }
 
-.nav-fulldisplay ul :first-child {
-  margin-top: -50px;
+.nav-fulldisplay ul li a:hover {
+  color: #b4b4b4;
 }
 
 section {
