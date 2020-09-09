@@ -925,8 +925,12 @@ a .project-box-placeholder:hover {
   margin: 0;
 }
 
-.section-projects .horizontal-scroll::-webkit-scrollbar {
-  display: none;
+.section-projects .horizontal-scroll::-webkit-scrollbar-track-piece {
+  background-color: #FFFFFF;
+}
+
+.section-projects .horizontal-scroll::-webkit-scrollbar-thumb {
+  color: #FFFFFF;
 }
 
 .section-projects .projects-collection {
@@ -1050,17 +1054,13 @@ a .project-box-placeholder:hover {
   font-size: 150%;
   margin: 0 20px;
   padding: 5px;
-  -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
   color: #101010;
 }
 
 .footer-small ul li a:hover {
-  color: #FFFFFF;
-  text-decoration: none;
-  background-color: #101010;
+  text-decoration: underline;
 }
 
 .main-hiddennav {

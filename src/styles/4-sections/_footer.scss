@@ -72,14 +72,11 @@
             font-size: 150%;
             margin: 0 20px;
             padding: 5px;
-            transition: background-color 0.2s;
-            transition: color 0.2s;
+            transition: border-bottom 0.2s;
             color: $background-color;
         }
         li a:hover {
-            color: $primary-color;
-            text-decoration: none;
-            background-color: $background-color;
+            text-decoration: underline;
         }
     }
 }
