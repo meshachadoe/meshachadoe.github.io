@@ -597,6 +597,52 @@ a .project-box-placeholder:hover {
   width: 400px;
 }
 
+.page-button {
+  position: fixed;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 200px;
+  font: 180% mencken-std-head-narrow, sans-serif;
+  font-weight: 800;
+  color: #FFFFFF;
+  background-color: #101010;
+  border-radius: 30px;
+  padding: 0 10px;
+  border: 2px solid #FFFFFF;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.page-button:hover {
+  color: #101010;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  outline: 2px;
+  outline-offset: 15px;
+}
+
+.next-button {
+  margin-left: 80vw;
+}
+
+.back-button {
+  margin-left: 10vw;
+}
+
 .proj-detail-section {
   padding: 0 10%;
   display: -webkit-box;

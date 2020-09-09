@@ -44,8 +44,6 @@ a .project-box:hover {
     a:first-of-type {margin-left: 8%;}
 }
 
-// a .project-box:first-of-type { margin-left: 20%; }
-
 .project-box-placeholder {
     border: none;
     box-shadow: none;
@@ -74,6 +72,40 @@ a .project-box-placeholder:hover {
         margin-bottom: 40px;
         width: 400px;
     }
+}
+
+.page-button {
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    font: 180% $heading-font;
+    font-weight: 800;
+    color: $primary-color;
+    background-color: $background-color;
+    border-radius: 30px;
+    padding: 0 10px;
+    border: 2px solid $primary-color;
+    transition: color 0.2s;
+    transition: background-color 0.2s;
+}
+.page-button:hover {
+    color: $background-color;
+    background-color: $primary-color;
+    text-decoration: none;
+    outline: 2px;
+    outline-offset: 15px
+}
+
+.next-button {
+    margin-left: 80vw;
+}
+
+.back-button {
+    margin-left: 10vw;
 }
 
 .proj-detail-section {
