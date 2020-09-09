@@ -28,16 +28,14 @@
         margin: 0;
     }
     .horizontal-scroll::-webkit-scrollbar {
-        // display: none;
-        // color: $primary-color;
-        // background-color: $primary-color;
+        display: none;
     }
-    .horizontal-scroll::-webkit-scrollbar-track-piece {
-        background-color: $primary-color;
-    }
-    .horizontal-scroll::-webkit-scrollbar-thumb {
-        color: $primary-color;
-    }
+    // .horizontal-scroll::-webkit-scrollbar-track-piece {
+    //     background-color: $primary-color;
+    // }
+    // .horizontal-scroll::-webkit-scrollbar-thumb {
+    //     color: $primary-color;
+    // }
     .projects-collection {
         display: flex;
         flex-direction: row;

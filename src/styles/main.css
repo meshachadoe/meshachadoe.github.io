@@ -458,38 +458,31 @@ button {
   padding: 0;
 }
 
-.menu-open {
-  position: fixed;
-  z-index: 9999;
-  top: 5vh;
-  right: 10vw;
-  padding: 10px 0 100px 0;
-  height: 100px;
-  width: 180px;
-  border: 6px solid #FFFFFF;
-  background-color: #FFFFFF;
+.button-link {
+  margin: 500px 0 0 78vw;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  background-color: #101010;
+  border: 2px solid #FFFFFF;
   border-radius: 20px;
-  -webkit-box-shadow: 10px 10px 0 #FFFFFF;
-          box-shadow: 10px 10px 0 #FFFFFF;
-  border: 6px solid #101010;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-}
-
-.menu-open h4 {
   font-family: mencken-std-head-narrow, sans-serif;
   font-weight: 800;
-  text-align: center;
-  line-height: 70%;
-  font-size: 170%;
-  color: #101010;
+  text-align: right;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 
-.menu-open:hover {
-  top: 6vh;
-  right: 9vw;
-  -webkit-box-shadow: 4px 4px 0 #FFFFFF;
-          box-shadow: 4px 4px 0 #FFFFFF;
+.button-link h4 {
+  line-height: 70%;
+  font-size: 100%;
+}
+
+.button-link:hover {
+  text-decoration: none;
+  background-color: #FFFFFF;
+  color: #101010;
 }
 
 .project-box {
@@ -613,7 +606,7 @@ a .project-box-placeholder:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 200px;
+  max-width: 300px;
   font: 180% mencken-std-head-narrow, sans-serif;
   font-weight: 800;
   color: #FFFFFF;
@@ -925,12 +918,8 @@ a .project-box-placeholder:hover {
   margin: 0;
 }
 
-.section-projects .horizontal-scroll::-webkit-scrollbar-track-piece {
-  background-color: #FFFFFF;
-}
-
-.section-projects .horizontal-scroll::-webkit-scrollbar-thumb {
-  color: #FFFFFF;
+.section-projects .horizontal-scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .section-projects .projects-collection {
@@ -1051,7 +1040,7 @@ a .project-box-placeholder:hover {
 }
 
 .footer-small ul li a {
-  font-size: 150%;
+  font-size: 140%;
   margin: 0 20px;
   padding: 5px;
   -webkit-transition: border-bottom 0.2s;
@@ -1246,6 +1235,10 @@ body {
 .about-connect .avatar {
   height: 250px;
   margin-left: 12%;
+}
+
+.proj-detail-content {
+  height: 500px;
 }
 
 .proj-detail {
