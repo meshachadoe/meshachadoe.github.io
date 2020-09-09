@@ -1,4 +1,4 @@
-header {
+.home-heading {
     margin-left: 15%;
     width: 75%;
     padding-left: 80px;
@@ -12,12 +12,12 @@ header {
         margin: 15px 0 0 0;
     }
 }
-header h3:first-of-type {
+.home-heading h3:first-of-type {
     margin-right: 650px;
     color: $primary-color;
     font-size: 160%;
 }
-header h3:last-of-type {
+.home-heading h3:last-of-type {
     margin-left: -110px;
     color: $primary-color;
     font-size: 140%;

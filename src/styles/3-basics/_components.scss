@@ -1,10 +1,9 @@
 .project-box {
-    max-height: 330px;
+    height: 300px;
     color: $primary-color;
     border: 6px solid $primary-color;
     border-radius: 25px;
     box-shadow: 10px 10px 0px $primary-color;
-    margin-right: 40px;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -20,25 +19,45 @@
     }
 }
 
+a .project-box {
+    font-size: inherit;
+    transition: color 0.2s;
+    transition: background-color 0.2s;
+}
+
+a .project-box:hover {
+    background-color: $primary-color;
+    color: $background-color;
+    text-decoration: none;
+}
+
 .section-projects {
-    .project-box {
-        width: 380px;
+    h4 { font-size: 200%; }
+    p {
+        font-size: 60%;
+        line-height: 100%;
     }
-    .project-box:first-of-type {
-        margin-left: 80px;
+    a .project-box { 
+        margin: 0 20px;
+        max-width: 600px; 
     }
-    .project-box:last-of-type {
-        border: none;
-        box-shadow: none;
-        width: 100px;
-        margin: 0;
-    }
+    a:first-of-type {margin-left: 8%;}
+}
+
+// a .project-box:first-of-type { margin-left: 20%; }
+
+.project-box-placeholder {
+    border: none;
+    box-shadow: none;
+}
+
+a .project-box-placeholder:hover {
+    background-color: $background-color;
+    cursor: default;
 }
 
 .project-page {
-    h4 {
-        font-size: 400%;
-    }
+    h4 { font-size: 400%; }
     p {
         font-size: 100%;
         line-height: 100%;
@@ -46,9 +65,29 @@
     .row {
         justify-content: center;
     }
-    .project-box {
+    a { font-size: 100%; }
+    a:hover { text-decoration: none; }
+
+    a .project-box {
         font-size: 90%;
+        margin-right: 40px;
         margin-bottom: 40px;
         width: 400px;
     }
+}
+
+.proj-detail-section {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    h5 {
+        width: 40%;
+    }
+    p {
+        width: 60%;
+        color: $primary-color;
+        font-size: 100%;
+    }
+
 }

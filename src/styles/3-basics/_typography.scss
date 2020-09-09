@@ -32,6 +32,13 @@ h4 {
     line-height: 85%;
 }
 
+h5 {
+    font-family: $text-font;
+    font-weight: 600;
+    font-size: 200%;
+    color: $primary-color;
+}
+
 p {
     font-family: $decor-font;
     font-weight: 300;

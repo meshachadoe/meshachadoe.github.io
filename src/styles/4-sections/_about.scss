@@ -11,16 +11,16 @@
         .about-box {
             z-index: 9999;
             color: $primary-color;
-            width: 30%;
+            width: 26%;
             text-align: center;
-            margin: -100px 0 0 25%;
+            margin: -100px 0 0 20%;
             h1, p {
+                text-align: left;
                 color: $primary-color;
                 padding: 0;
                 margin-bottom: 20px;
             }
             p {
-                text-align: center;
                 font-size: 90%;
             }
         }
@@ -81,7 +81,7 @@
         color: $primary-color;
         width: 30%;
         text-align: left;
-        margin: -100px 0 0 25%;
+        margin: -100px 0 0 20%;
         h4 {
             color: $primary-color;
             line-height: 80%;
