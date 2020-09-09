@@ -1,31 +1,35 @@
 header {
-    margin-left: 25%;
+    margin-left: 15%;
     width: 75%;
     padding-left: 80px;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 
     h1 {
         margin: 15px 0 0 0;
     }
-
-    h3 {
-        margin-left: 200px;
-        font-size: 150%;
-        text-align: right;
-    }
+}
+header h3:first-of-type {
+    margin-right: 650px;
+    color: $primary-color;
+    font-size: 160%;
+}
+header h3:last-of-type {
+    margin-left: -110px;
+    color: $primary-color;
+    font-size: 140%;
+    text-align: right;
 }
 
 .heading {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-bottom: -38px;
+    justify-content: center;
+    margin: -85px 0 -55px 0;
     .title {
-        margin-left: 50px;
         height: 300px;
         width: auto;
         margin-right: 0px;

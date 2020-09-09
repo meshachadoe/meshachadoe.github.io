@@ -1,0 +1,105 @@
+.about-page {
+    background-color: $background-color;
+    color: $primary-color;
+    .about-intro {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100vh;
+        .about-box {
+            z-index: 9999;
+            color: $primary-color;
+            width: 30%;
+            text-align: center;
+            margin: -100px 0 0 25%;
+            h1, p {
+                color: $primary-color;
+                padding: 0;
+                margin-bottom: 20px;
+            }
+            p {
+                text-align: center;
+                font-size: 90%;
+            }
+        }
+
+        img {
+            top: 200px;
+
+        }
+
+        .profile {
+            position: absolute;
+            margin-left: 50%;
+            height: 350px;
+            z-index: -9999;
+        }
+    }
+}
+
+.about-skills {
+    margin: -200px 0 0 20%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 80vh;
+    color: $primary-color;
+    h3 {
+        font-family: $text-font;
+        font-weight: 700;
+        font-size: 180%;
+        text-align: center;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            font-family: $heading-font;
+            font-weight: 800;
+            font-size: 400%;
+            line-height: 75%;
+        }
+        .list-number {
+            font-family: $text-font;
+            font-size: 50%;
+        }
+    }
+}
+
+.about-connect {
+    margin: 0;
+    height: 60vh;
+    display: flex;
+    align-items: center;  
+    .about-box {
+        z-index: 9999;
+        color: $primary-color;
+        width: 30%;
+        text-align: left;
+        margin: -100px 0 0 25%;
+        h4 {
+            color: $primary-color;
+            line-height: 80%;
+        }
+        a {
+            padding: 0 10px;
+            transition: background-color 0.2s;
+            transition: color 0.2s;
+            border: 3px solid $primary-color;
+        }
+        a:hover {
+            color: $background-color;
+            text-decoration: none;
+            background-color: $primary-color;
+        }
+    }
+    .avatar {
+        height: 250px;
+        margin-left: 12%;
+    }
+}

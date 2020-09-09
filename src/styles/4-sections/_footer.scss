@@ -1,70 +1,90 @@
 .footer-home {
-    height: 140vh;
-    background-image: url("../img/DesktopUI.png");
+    height: 150vh;
+    background-image: url("../img/Desktop UI.png");
     background-size: cover;
     background-position: center;
-    margin-top: -180px;
+    margin-top: -80vh;
+    z-index: 1;
     h2, p, ul {
-        padding-left: 50px;
+        padding: 0;
+        margin: 0;
     }
     h2 {
-        padding-top: 40%;
-        margin-bottom: 10px;
+        padding-top: 100vh;
+        margin-bottom: 0px;
         color: #000;
         @include addStroke(#fff,#000);     
     }
     p {
         color: #fff;
-        font-family: $text-font;
         font-weight: 300;
-        font-size: 180%;
+        font-size: 120%;
         margin: 0;
     }
     ul {
         list-style: none;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
         li {
-            font-size: 300%;
+            font-size: 250%;
             color: #fff;
+            padding-right: 5%;
             a {
-                padding-bottom: 180px;
                 font-size: 80%;
-                font-family: $decor-font;
-                font-weight: 300;
                 text-decoration: none;
-                color: #fff;
+                color: $primary-color;
+                padding: 0 10px;
+                border: 3px solid $primary-color;
+                box-shadow: 5px 5px 0 $primary-color;
+                transition: background-color 0.2s;
+                transition: color 0.2s;
             }
+        }
+        li a:hover {
+            color: $background-color;
+            text-decoration: none;
+            background-color: $primary-color;
         }
     }
 }
 
 .footer-small {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: -100px;
-    height: 15%;
+    // margin-top: -100px;
+    height: 8%;
     background-color: $primary-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     h4, p, ul {
         color: $background-color;
     }
-    h4 {
-        font-size: 160%;
-        padding-left: 10%;
-    }
     ul {
+        height: 8%;
+        list-style: none;
         display: flex;
         flex-direction: row;
-        padding-left: 0;
-        list-style: none;
-        margin-left: 36%;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 40%;
+        margin-top: 20px;
         li a {
             font-size: 150%;
             margin: 0 20px;
-            transition-duration: 0.4s;
+            padding: 5px;
+            transition: background-color 0.2s;
+            transition: color 0.2s;
+            color: $background-color;
         }
         li a:hover {
-            text-decoration: underline;
-            color: rgb(10,10,10);
+            color: $primary-color;
+            text-decoration: none;
+            background-color: $background-color;
         }
     }
+}
+
+.main-hiddennav{
+    margin-left: 26%;
+    width: 70%;
 }

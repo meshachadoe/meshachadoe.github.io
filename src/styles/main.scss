@@ -13,11 +13,12 @@
 @import '3-basics/components';
 
 // 4 - SECTIONS
-@import '4-sections/siteHeader';
+@import '4-sections/header';
 @import '4-sections/navigation';
-@import '4-sections/siteMainContent';
+@import '4-sections/mainContent';
 @import '4-sections/footer';
 @import '4-sections/projects';
+@import '4-sections/about';
 
 // 5 - QUERIES
 @import '5-queries/home';
