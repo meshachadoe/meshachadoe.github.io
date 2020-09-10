@@ -1,3 +1,56 @@
 body {
     background-color: $background-color;
 }
+@include media('>phone','<=tablet') {
+    .project-page {
+        h1 {
+            font-size: 500%;
+        }
+    }
+    
+    .project-page {
+        h4 { font-size: 500%; }
+        p {
+            font-size: 180%;
+        }
+        a .project-box {
+            font-size: 90%;
+            width: 90%;
+        }
+    }
+
+    .proj-detail-content {
+        height: 600px;
+    }
+
+    .proj-detail {
+        header {
+            height: 300px;
+            h5 {
+                font-size: 140%;
+            }
+        }
+    }
+
+    .proj-detail-section {
+        padding: 0 10%;
+        flex-direction: column;
+        margin: 20px 0;
+        h5 {
+            width: 40%;
+        }
+        p {
+            width: 100%;
+            font-size: 140%;
+        }
+    
+    }
+    
+    .next-button {
+        margin-left: 55vw;
+    }
+
+    .button-link {
+        margin: 500px 0 500px 10vw;
+    }
+}

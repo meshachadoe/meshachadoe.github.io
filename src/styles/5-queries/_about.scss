@@ -1,0 +1,39 @@
+@include media('>phone','<=tablet') {
+    .about-page {
+        .about-intro {
+            height: 500px;
+            .about-box {
+                width: 80%;
+                margin: 260px 0 0 10%;
+                p {
+                    font-size: 140%;
+                }
+            }
+            .profile {
+                margin-top: 50px;
+                margin-left: 30%;
+                height: 230px;
+            }
+        }
+    }
+    .about-skills {
+        margin: 0 0 0 10%;
+        justify-content: center;
+        align-items: flex-start;
+        height: 400px;
+        color: $primary-color;
+    }
+    .about-connect {
+        height: 260px;
+        .about-box {
+            z-index: 9999;
+            color: $primary-color;
+            width: 100%;
+            text-align: left;
+            margin: -100px 0 0 10%;
+            h4 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

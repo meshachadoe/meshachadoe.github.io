@@ -107,19 +107,3 @@ a .project-box-placeholder:hover {
 .back-button {
     margin-left: 10vw;
 }
-
-.proj-detail-section {
-    padding: 0 10%;
-    display: flex;
-    flex-direction: row;
-    margin: 20px 0;
-    h5 {
-        width: 40%;
-    }
-    p {
-        width: 60%;
-        color: $primary-color;
-        font-size: 100%;
-    }
-
-}

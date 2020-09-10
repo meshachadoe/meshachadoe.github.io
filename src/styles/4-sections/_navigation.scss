@@ -42,6 +42,32 @@
     }
 }
 
+.home-overlay {
+    background-color: $navigation-color;
+    display: none;
+    ul {
+        height: 8vh; 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        padding-inline-start: 0;
+        li a {
+            font-size: 170%;
+            padding: 0 10px;
+            margin: 0 0;
+            transition: background-color 0.2s;
+            transition: color 0.2s;
+        }
+    }
+    ul li a:hover {
+        color: $background-color;
+        text-decoration: none;
+        background-color: $primary-color;
+    }
+}
+
 .overlay {
     background-color: $navigation-color;
     // height: 10vh; 

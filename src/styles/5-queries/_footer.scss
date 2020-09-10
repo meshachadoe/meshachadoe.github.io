@@ -1,0 +1,14 @@
+@include media('>phone','<=tablet') {
+    .footer-small {
+        background-color: $primary-color;
+        display: flex;
+        align-items: center;
+        ul {
+            padding-left: 2%;
+            li a {
+                font-size: 180%;
+                margin: 0 5px;
+            }
+        }
+    }
+}

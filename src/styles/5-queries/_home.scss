@@ -1,12 +1,109 @@
-html, body {
-    overflow-x: hidden;
-}
+@include media('>phone','<=tablet') {
+    html, body {
+        font-size: 10px;
+        overflow-x: hidden;
+    }
+    .home-overlay {
+        display: unset;
+    }
+    .main-nav {
+        display: none;
+    }
+    .home-heading {
+        height: 80vh;
+    }
+    .home-heading, .section-projects  {
+        padding-left: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+    .home-heading h3:first-of-type {
+        margin: 0 200px 0 0;
+        font-size: 160%;
+    }
+    .home-heading h3:last-of-type {
+        margin: 10px 0 0 120px;
+        font-size: 160%;
+    }
+    .heading {
+        margin: -10px 0 0px 0;
+        img {
+            display: none;
+        }
+        // flex-direction: column;
+    }
 
-body {
-    background-color: $background-color;
+    .section-projects {
+        height: 500px;
+        h2 {
+            padding-left: 20px;
+            font-size: 600%;
+            width: 100%;
+            text-align: left;
+        }
+        .horizontal-scroll {
+            height: 300px;
+        }
+        .projects-collection {
+            h4 {
+                font-size: 120%;
+            }
+            p {
+                font-size: 50%;
+            }
+            .project-box {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+    body {
+        min-height: 50vh;
+    }
+
+    .footer-home {
+        height: 100vh;
+        h2, p {
+            text-align: center;
+        }
+        h2 {
+            padding-top: 80vh;
+        }
+        p {
+            margin-left: 25%;
+            width: 50%;
+        }
+        ul {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+            li {
+                margin-bottom: 30px;
+                a {
+                    padding: 10px 20px;
+                    width: 100%;
+                    border: 2px solid $primary-color;
+                    box-shadow: none;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+
+    .main-hiddennav {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .overlay {
+        ul {
+            justify-content: center;
+            li a {
+                font-size: 170%;
+                margin: 0 0;
+            }
+        }
+    }
 }
-// @include media('>phone','<=tablet') {
-//     h1 {
-//         font-size: 60%;
-//     }
-// }
