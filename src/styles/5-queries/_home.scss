@@ -1,3 +1,9 @@
+$breakpoints: (
+  'phone': 320px,
+  'tablet': 960px,
+  'desktop': 1024px
+);
+
 @include media('>phone','<=tablet') {
     html, body {
         font-size: 10px;
@@ -56,6 +62,9 @@
                 height: 200px;
             }
         }
+        .project-box-placeholder {
+            width: 50px;
+        }
     }
 
     body {
@@ -106,4 +115,8 @@
             }
         }
     }
+}
+
+@include media('>tablet','<=desktop') {
+
 }

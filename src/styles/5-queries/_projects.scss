@@ -19,6 +19,12 @@ body {
         }
     }
 
+    .page-button {
+        max-width: 350px;
+        font: 240% $heading-font;
+        padding: 5px 15px;
+    }
+
     .proj-detail-content {
         height: 600px;
     }

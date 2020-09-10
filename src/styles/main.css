@@ -496,6 +496,7 @@ button {
 .project-box {
   height: 300px;
   color: #FFFFFF;
+  background-color: #101010;
   border: 6px solid #FFFFFF;
   border-radius: 25px;
   -webkit-box-shadow: 10px 10px 0px #FFFFFF;
@@ -558,6 +559,7 @@ a .project-box:hover {
 }
 
 .project-box-placeholder {
+  width: 100px;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1275,7 +1277,7 @@ body {
 
 .proj-detail header {
   padding: 0 10%;
-  height: 80vh;
+  height: 60vh;
   padding-top: 200px;
 }
 
@@ -1378,7 +1380,7 @@ body {
           flex-direction: column;
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 321px) and (max-width: 960px) {
   html, body {
     font-size: 10px;
     overflow-x: hidden;
@@ -1432,6 +1434,9 @@ body {
   .section-projects .projects-collection .project-box {
     width: 200px;
     height: 200px;
+  }
+  .section-projects .project-box-placeholder {
+    width: 50px;
   }
   body {
     min-height: 50vh;
@@ -1492,7 +1497,7 @@ body {
   background-color: #101010;
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 321px) and (max-width: 960px) {
   .project-page h1 {
     font-size: 500%;
   }
@@ -1505,6 +1510,11 @@ body {
   .project-page a .project-box {
     font-size: 90%;
     width: 90%;
+  }
+  .page-button {
+    max-width: 350px;
+    font: 240% mencken-std-head-narrow, sans-serif;
+    padding: 5px 15px;
   }
   .proj-detail-content {
     height: 600px;
@@ -1538,7 +1548,7 @@ body {
   }
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 321px) and (max-width: 960px) {
   .about-page .about-intro {
     height: 500px;
   }
@@ -1580,7 +1590,7 @@ body {
   }
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 321px) and (max-width: 960px) {
   .footer-small {
     background-color: #FFFFFF;
     display: -webkit-box;
