@@ -7,7 +7,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        height: 100vh;
+        height: 700px;
         .about-box {
             z-index: 9999;
             color: $primary-color;
@@ -46,7 +46,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: 80vh;
+    height: 700px;
     color: $primary-color;
     h3 {
         font-family: $text-font;
@@ -73,7 +73,7 @@
 
 .about-connect {
     margin: 0;
-    height: 60vh;
+    height: 300px;
     display: flex;
     align-items: center;  
     .about-box {

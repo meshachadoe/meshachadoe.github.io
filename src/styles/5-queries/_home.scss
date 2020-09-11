@@ -1,7 +1,8 @@
 $breakpoints: (
   'phone': 320px,
   'tablet': 960px,
-  'desktop': 1024px
+  'desktop': 1024px,
+  'project-display': 1187px
 );
 
 @include media('>phone','<=tablet') {
@@ -107,6 +108,9 @@ $breakpoints: (
     }
 
     .overlay {
+        h2 {
+            display: none;
+        }
         ul {
             justify-content: center;
             li a {
@@ -117,6 +121,11 @@ $breakpoints: (
     }
 }
 
-@include media('>tablet','<=desktop') {
-
+@include media('>phone','<=project-display') {
+    .project-page {
+        h1 {
+            display: grid;
+            align-self: center;
+        }
+    }
 }

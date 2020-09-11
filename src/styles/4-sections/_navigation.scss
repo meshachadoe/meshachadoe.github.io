@@ -71,9 +71,18 @@
 .overlay {
     background-color: $navigation-color;
     // height: 10vh; 
-    // display: flex;
-    // flex-direction: row;
-    // align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        display: none;
+        text-align: left;
+        margin-right: 38%;
+        font-size: 160%;
+        line-height: 60%;
+        color: white;
+    }
     h4 {
         font-family: $heading-font;
         font-size: 20px;
