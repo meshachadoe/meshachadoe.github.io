@@ -493,6 +493,52 @@ button {
   color: #101010;
 }
 
+.page-button {
+  position: fixed;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 300px;
+  font: 180% mencken-std-head-narrow, sans-serif;
+  font-weight: 800;
+  color: #FFFFFF;
+  background-color: #101010;
+  border-radius: 30px;
+  padding: 0 10px;
+  border: 2px solid #FFFFFF;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.page-button:hover {
+  color: #101010;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  outline: 2px;
+  outline-offset: 15px;
+}
+
+.next-button {
+  margin-left: 80vw;
+}
+
+.back-button {
+  margin-left: 10vw;
+}
+
 .project-box {
   height: 300px;
   color: #FFFFFF;
@@ -601,52 +647,6 @@ a .project-box-placeholder:hover {
   max-width: 400px;
 }
 
-.page-button {
-  position: fixed;
-  z-index: 9999;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 300px;
-  font: 180% mencken-std-head-narrow, sans-serif;
-  font-weight: 800;
-  color: #FFFFFF;
-  background-color: #101010;
-  border-radius: 30px;
-  padding: 0 10px;
-  border: 2px solid #FFFFFF;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
-  -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
-}
-
-.page-button:hover {
-  color: #101010;
-  background-color: #FFFFFF;
-  text-decoration: none;
-  outline: 2px;
-  outline-offset: 15px;
-}
-
-.next-button {
-  margin-left: 80vw;
-}
-
-.back-button {
-  margin-left: 10vw;
-}
-
 .home-heading {
   margin-left: 15%;
   width: 75%;
@@ -672,9 +672,10 @@ a .project-box-placeholder:hover {
 }
 
 .home-heading h3:first-of-type {
-  margin-right: 650px;
+  margin-right: 570px;
   color: #FFFFFF;
   font-size: 160%;
+  width: 200px;
 }
 
 .home-heading h3:last-of-type {
@@ -1037,10 +1038,11 @@ a .project-box-placeholder:hover {
   font-size: 80%;
   text-decoration: none;
   color: #FFFFFF;
-  padding: 0 10px;
+  padding: 5px 20px;
   border: 3px solid #FFFFFF;
-  -webkit-box-shadow: 5px 5px 0 #FFFFFF;
-          box-shadow: 5px 5px 0 #FFFFFF;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 30px;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
   -webkit-transition: color 0.2s;
@@ -1426,7 +1428,7 @@ body {
     width: 100%;
   }
   .home-heading h3:first-of-type {
-    margin: 0 200px 0 0;
+    margin: 0 60px 0 0;
     font-size: 160%;
   }
   .home-heading h3:last-of-type {
@@ -1434,7 +1436,7 @@ body {
     font-size: 160%;
   }
   .heading {
-    margin: -10px 0 0px 0;
+    margin: -15px 0 0px 0;
   }
   .heading img {
     display: none;
@@ -1477,31 +1479,31 @@ body {
     padding-top: 80vh;
   }
   .footer-home p {
-    margin-left: 25%;
+    margin: 0 25% 20px 25%;
     width: 50%;
   }
   .footer-home ul {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 50px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 10% 50px 10%;
+    width: 80%;
   }
   .footer-home ul li {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    padding-right: 5px;
   }
   .footer-home ul li a {
-    padding: 10px 20px;
-    width: 100%;
-    border: 2px solid #FFFFFF;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    width: 60%;
     border-radius: 30px;
   }
   .main-hiddennav {
@@ -1552,11 +1554,6 @@ body {
     width: 90%;
     margin: 30px 0px 0 12px;
   }
-  .page-button {
-    max-width: 350px;
-    font: 240% mencken-std-head-narrow, sans-serif;
-    padding: 5px 15px;
-  }
   .proj-detail-content {
     height: 600px;
   }
@@ -1581,8 +1578,15 @@ body {
     width: 100%;
     font-size: 140%;
   }
+  .page-button {
+    max-width: 300px;
+    font: 240% mencken-std-head-narrow, sans-serif;
+    font-weight: 800;
+    padding: 5px 15px;
+  }
   .next-button {
     margin-left: 55vw;
+    display: none;
   }
   .button-link {
     margin: 500px 0 500px 10vw;

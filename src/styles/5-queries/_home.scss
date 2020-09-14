@@ -25,7 +25,7 @@ $breakpoints: (
         width: 100%;
     }
     .home-heading h3:first-of-type {
-        margin: 0 200px 0 0;
+        margin: 0 60px 0 0;
         font-size: 160%;
     }
     .home-heading h3:last-of-type {
@@ -33,7 +33,7 @@ $breakpoints: (
         font-size: 160%;
     }
     .heading {
-        margin: -10px 0 0px 0;
+        margin: -15px 0 0px 0;
         img {
             display: none;
         }
@@ -81,21 +81,21 @@ $breakpoints: (
             padding-top: 80vh;
         }
         p {
-            margin-left: 25%;
+            margin: 0 25% 20px 25%;
             width: 50%;
         }
         ul {
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
-            margin-bottom: 50px;
+            flex-wrap: wrap;
+            margin: 0 10% 50px 10%;
+            width: 80%;
             li {
-                margin-bottom: 30px;
+                margin-bottom: 20px;
+                padding-right: 5px;
                 a {
-                    padding: 10px 20px;
-                    width: 100%;
-                    border: 2px solid $primary-color;
-                    box-shadow: none;
+                    width: 60%;
                     border-radius: 30px;
                 }
             }

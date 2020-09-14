@@ -22,12 +22,6 @@ body {
         }
     }
 
-    .page-button {
-        max-width: 350px;
-        font: 240% $heading-font;
-        padding: 5px 15px;
-    }
-
     .proj-detail-content {
         height: 600px;
     }
@@ -54,9 +48,17 @@ body {
         }
     
     }
+
+    .page-button {
+        max-width: 300px;
+        font: 240% $heading-font;
+        font-weight: 800;
+        padding: 5px 15px;
+    }
     
     .next-button {
         margin-left: 55vw;
+        display: none;
     }
 
     .button-link {
