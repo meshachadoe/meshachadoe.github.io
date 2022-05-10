@@ -39,10 +39,20 @@ h5 {
     color: $primary-color;
 }
 
-p {
+h6 {
+    font-family: $decor-font;
+    font-weight: 500;
+    font-size: 120%;
+    font-style: italic;
+    color: $primary-color;
+    margin: 0;
+}
+
+p, li, caption {
     font-family: $decor-font;
     font-weight: 300;
-    font-size: 80%;
+    font-size: 100%;
+    color: $primary-color;
 }
 
 .stroke {

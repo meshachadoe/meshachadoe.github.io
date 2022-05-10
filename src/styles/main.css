@@ -409,10 +409,20 @@ h5 {
   color: #FFFFFF;
 }
 
-p {
+h6 {
+  font-family: anisette-petite, sans-serif;
+  font-weight: 500;
+  font-size: 120%;
+  font-style: italic;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+p, li, caption {
   font-family: anisette-petite, sans-serif;
   font-weight: 300;
-  font-size: 80%;
+  font-size: 100%;
+  color: #FFFFFF;
 }
 
 .stroke {
@@ -1056,6 +1066,7 @@ a .project-box-placeholder:hover {
 }
 
 .footer-small {
+  margin-top: 40px;
   height: 8%;
   background-color: #FFFFFF;
   display: -webkit-box;
@@ -1298,8 +1309,14 @@ body {
 
 .proj-detail header {
   padding: 0 10%;
-  height: 60vh;
   padding-top: 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .proj-detail header h3 {
@@ -1308,7 +1325,7 @@ body {
   color: #FFFFFF;
 }
 
-.proj-detail header h5 {
+.proj-detail header h4 {
   max-width: 100%;
 }
 
@@ -1318,20 +1335,35 @@ body {
   background-color: #FFFFFF;
 }
 
+.proj-detail-overview {
+  padding: 0 10%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
 .proj-detail-section {
   width: 100vw;
   padding: 0 10%;
-  margin: 20px 0;
+  margin: 60px 0;
 }
 
 .proj-detail-section h5 {
   width: 80%;
 }
 
-.proj-detail-section p {
+.proj-detail-section > p, .proj-detail-section ul li {
   width: 60%;
   color: #FFFFFF;
   font-size: 100%;
+}
+
+.proj-detail-section-imglabel {
+  color: #FFFFFF;
+  font-size: 100%;
+  font-style: italic;
+  width: 100%;
 }
 
 .homeup > img {
@@ -1340,12 +1372,12 @@ body {
 }
 
 .homeup__section-3 div {
-  margin: 80px 0;
+  margin: 30px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 40px;
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1366,6 +1398,11 @@ body {
 
 .homeup__section-4 > img {
   width: 100%;
+}
+
+.homeup__section-4 > p {
+  width: 100%;
+  text-align: center;
 }
 
 .acm > img {
