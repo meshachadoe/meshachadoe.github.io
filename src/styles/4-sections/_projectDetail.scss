@@ -93,13 +93,20 @@
         max-width: 100vw;
 
     }
-    &__section-3 {
+    &__section-product {
         padding: 0 0;
         > h5 {
             padding: 0 10%;
         }
         > img {
             width: 100%;
+        }
+        > h6 {
+            text-align: center;
+        }
+        > p {
+            width: 100%;
+            text-align: center;
         }
     }
 }

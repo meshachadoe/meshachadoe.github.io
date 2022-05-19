@@ -23,25 +23,72 @@
         <a href="./homeup.html" class="page-button next-button">dev/homeup&nbsp;<ion-icon name="arrow-forward-circle-outline" class="arrow-icon"></ion-icon></a>
         <img src="../../src/img/acm/banner.png" alt="ACM Banner" />
         <header class="animate__animated animate__fadeInLeft">
-            <h3>DEV/ACM</h3>
-            <h5><span class="highlight-white">FRONTEND WEB DEVELOPMENT</span></h5>
-            <h5>january 2021 - september 2021</h5>
+            <div>
+                <h3>DEV/ACM</h3>
+                <h5><span class="highlight-white">FRONTEND WEB DEVELOPMENT</span></h5>
+                <h5>january 2021 - september 2021</h5>
+            </div>
+            <div>
+                <h6>ROLE</h6>
+                <p>Front-End Developer</p>
+            </div>
         </header>
         <section class="proj-detail-content animate__animated animate__fadeInUp">
             <div class="proj-detail-section">
-                <h5>TECH STACK</h5>
-                <!-- <p>HTML, CSS, SCSS, Vanilla JavaScript<br>Hosted and deployed using GitHub Pages</p> -->
+                <h5>OVERVIEW</h5>
+                <p> Having grown to be one of UCSD’s largest computing organizations, ACM at UCSD sought to build a new website that recognizes the contributions of its members and showcases the events and initiatives that it brings to the UCSD student community.</p>
             </div>
             <div class="proj-detail-section">
-                <h5>OVERVIEW</h5>
-                <!-- <p>Core Consulting is an education-focused consulting agency, providing services for school owners and teachers in the form of consultations and training programmes.<br><br>I was tasked to develop a simple landing page for this institution, in addition to designing the user interface with adherence to the content from the client. To build the website, I used primarily HTML and CSS with SCSS used to better structure the stylesheets for future edits. Reusable components were used for better efficiency in the development process.</p> -->
+                <h5>PROBLEM STATEMENT</h5>
+                <p> A computing community should have a website that is representative of the technical expertise of its members, while also publicizing the organization’s initiatives and events.</p>
             </div>
-            <div class="proj-detail-section acm__section-3">
+            <div class="proj-detail-section">
+                <h5>WHY A NEW WEBSITE?</h5>
+                <p>
+                    As a student, the reputation of a student organization can make a difference in deciding whether one wants to involve themselves in the organization. What’s the easiest way of building credibility? A performant and representative website is a must for this type of organization.
+                    <br/><br/>
+                    Acknowledging this necessity can make a difference in the initial impression that people would have about the organization, and therefore it needs to be carefully crafted to be representative of all the aspects that compose the organization.
+                </p>
+            </div>
+            <div class="proj-detail-section">
+                <h5>DECIDING ON A TECH STACK</h5>
+                <ul>
+                    <li>
+                        React with Gatsby: With the need for the reusability of components and extensive use of React within the organization, React was the clear choice. But we sought to find a React framework that allowed for easy scalability, and we ended up with Gatsby.
+                    </li>
+                    <li>
+                        LESS: An organizational website would need to define a particular visual identity that is synchronous throughout all of its pages. A powerful CSS preprocessor was necessary to allow for streamlined styling organization.
+                    </li>
+                </ul>
+            </div>
+            <div class="proj-detail-section acm__section-product">
                 <h5>THE FINAL PRODUCT</h5>
                 <img src="../../src/img/acm/home.png" alt="ACM Website Home" />
+                <h6>An Inviting Landing Page</h6>
+                <p class="proj-detail-section-imglabel">A necessity for any website is a landing page that showcases the most important aspects of our organization.</p>
                 <img src="../../src/img/acm/about.png" alt="ACM Website About" />
+                <h6>Showcasing and Inviting Company Partnerships</h6>
+                <p class="proj-detail-section-imglabel">As a way to strengthen our credibility as an organization, it was important to showcase our company sponsors while also attracting new sponsors.</p>
                 <img src="../../src/img/acm/sponsors.png" alt="ACM Website Sponsors" /> 
-                <!-- <p>Core Consulting is an education-focused consulting agency, providing services for school owners and teachers in the form of consultations and training programmes.<br><br>I was tasked to develop a simple landing page for this institution, in addition to designing the user interface with adherence to the content from the client. To build the website, I used primarily HTML and CSS with SCSS used to better structure the stylesheets for future edits. Reusable components were used for better efficiency in the development process.</p> -->
+                <h6>Emphasizing the Organization’s History</h6>
+                <p class="proj-detail-section-imglabel">As a growing organization with numerous initiatives, there was a need to highlight our primary initiatives and sub-organizations.</p>
+            </div>
+            <div class="proj-detail-section">
+                <h5>CREATING A SPACE FOR<br/>FUTURE ENHANCEMENT</h5>
+                <p>As an organizational website, there comes the expectation that the website would have to be updated on a regular basis.</p>
+                <ul>
+                    <li>
+                        Utilizing existing backend services within the organization: We leveraged an existing backend API that stores upcoming events of the organization, and therefore centralized the event updating mechanism to be independent of the website.
+                    </li>
+                    <li>
+                        Taking advantage of the BEM naming convention: With the power of LESS nesting capabilities, BEM was the preferred convention to name the classes within the application. This allowed for a more readable stylesheet in addition to easily understandable class naming.
+                    </li>
+                </ul>
+            </div>
+            <div class="proj-detail-section">
+                <h5>WORKING IN <br/> MULTIFUNCTIONAL TEAMS</h5>
+                <p>With this project being one of my first experiences working in a team that is composed of a product manager, designers and developers, it became necessary to acknowledge the importance of communication.Along the way, there was a need for a constant back and forth, so that the developers understood what the designers intended through the original designs.</p>
+                <p>We adopted the Agile methodology to regulate the project’s progress, with certain tasks (stories) being assigned to each individual in the team. With Agile came the benefit of iterative development, in which design changes throughout the development process were expected. As a result, developers had to always be prepared to make slight changes to existing components in case of any new improvements or suggestions. There was value in using Agile, through which it helped ensure the continuous progress of the project and gave consistent deadlines to each team member.</p>
             </div>
             <a href="https://meshachadoe.github.io/core/" target="_blank" class="button-link">visit live site</a>
         </section>

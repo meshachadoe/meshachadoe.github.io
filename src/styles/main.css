@@ -1410,16 +1410,25 @@ body {
   max-width: 100vw;
 }
 
-.acm__section-3 {
+.acm__section-product {
   padding: 0 0;
 }
 
-.acm__section-3 > h5 {
+.acm__section-product > h5 {
   padding: 0 10%;
 }
 
-.acm__section-3 > img {
+.acm__section-product > img {
   width: 100%;
+}
+
+.acm__section-product > h6 {
+  text-align: center;
+}
+
+.acm__section-product > p {
+  width: 100%;
+  text-align: center;
 }
 
 .proj-detail-display h5 {
