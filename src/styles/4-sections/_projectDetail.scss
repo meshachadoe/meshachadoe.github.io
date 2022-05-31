@@ -24,6 +24,9 @@
             background-color: $primary-color;
         }
     }
+    &-image {
+        max-width: 100vw;
+    }
     &-overview {
         padding: 0 10%;
         display: grid;
@@ -59,8 +62,9 @@
         margin-top: 80px;
         max-width: 100vw;
     }
+    &__section-stack,
     &__section-3 {
-        div {
+        > div {
             margin: 30px 0;
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -70,6 +74,15 @@
             > img {
                 width: 100%;
             }
+        }
+    }
+    &__section-stack {
+        div > img {
+            padding: 0 20%;
+            width: 100%;
+        }
+        ul li {
+            width: 100%;
         }
     }
     &__section-4 {
