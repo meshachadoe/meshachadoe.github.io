@@ -122,6 +122,20 @@
             text-align: center;
         }
     }
+    &__section-enhancement {
+        > div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ul li {
+                width: 100%
+            }
+            img {
+                width: 35%;
+                margin: 0 5%;
+            }
+        }
+    }
 }
 
 .proj-detail-display {
